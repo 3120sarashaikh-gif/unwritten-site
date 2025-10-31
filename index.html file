@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unwritten — For Everything Locals Never Tell You</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  /* Global Styles */
+  :root {
+    --primary: #0c1a2b;
+    --accent: #4bb5e4;
+    --bg: #f9f9fb;
+    --text: #1b1b1b;
+    --muted: #555;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: linear-gradient(135deg, #e8f2ff, #fff);
+    text-align: center;
+    padding: 120px 20px;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+    animation: fadeIn 1.2s ease;
+  }
+
+  header h3 {
+    font-weight: 500;
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+
+  header p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: var(--text);
+  }
+
+  .cta {
+    background: var(--accent);
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .cta:hover {
+    background: #2b97c8;
+    transform: translateY(-2px);
+  }
+
+  /* Features Section */
+  section {
+    padding: 80px 10%;
+  }
+
+  section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--primary);
+    margin-bottom: 60px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  }
+
+  .card h3 {
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+
+  /* Visa Hub */
+  .visa-section {
+    background: #0c1a2b;
+    color: white;
+  }
+
+  .visa-section h2 {
+    color: #fff;
+  }
+
+  .visa-card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: left;
+    transition: all 0.3s;
+  }
+
+  .visa-card:hover {
+    background: rgba(255,255,255,0.15);
+  }
+
+  /* About */
+  .about {
+    background: #eef5fa;
+    text-align: center;
+  }
+
+  .about p {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  /* Footer */
+  footer {
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 0.9rem;
+  }
+
+  footer a {
+    color: var(--accent);
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media(max-width:600px){
+    header h1 {font-size: 2.2rem;}
+  }
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header>
+  <h1>🌍 Unwritten</h1>
+  <h3><i>For everything locals never tell you.</i></h3>
+  <p>Discover a place beyond its map. Unwritten is the world’s first cultural companion app — sharing unspoken rules, soft habits, and local wisdom that help travelers, students, and immigrants truly belong.</p>
+  <a href="#" class="cta">Get Early Access</a>
+  <a href="#" class="cta">Watch Demo</a>
+</header>
+
+<!-- FEATURES -->
+<section>
+  <h2>✨ Features That Feel Human</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>🗣️ Local Habits Feed</h3>
+      <p>Short, real insights from locals and verified travelers that help you blend in.</p>
+    </div>
+    <div class="card">
+      <h3>🕓 Daily Rhythm</h3>
+      <p>Know the local flow — when people eat, travel, and rest — so you fit in naturally.</p>
+    </div>
+    <div class="card">
+      <h3>💬 Cultural Dos & Don’ts</h3>
+      <p>Quick tips and flashcards that save you from awkward moments and teach respect.</p>
+    </div>
+    <div class="card">
+      <h3>📍 Neighborhood Vibes</h3>
+      <p>Discover areas described by feel, not stars: “quiet,” “artsy,” “student-friendly.”</p>
+    </div>
+    <div class="card">
+      <h3>💭 Expectation Radar</h3>
+      <p>Decode social behaviors — formality, punctuality, openness — to blend effortlessly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- VISA HUB -->
+<section class="visa-section">
+  <h2>🛂 Visa & Legal Hub</h2>
+  <div class="grid">
+    <div class="visa-card">
+      <h3>Tourist & Work Visas</h3>
+      <p>Human-friendly breakdowns of visa requirements, validity, and renewal processes with official links.</p>
+    </div>
+    <div class="visa-card">
+      <h3>Residence Registration</h3>
+      <p>Know when, where, and how to register your address legally in your new city.</p>
+    </div>
+    <div class="visa-card">
+      <h3>Essentials Toolkit</h3>
+      <p>Banking, SIM cards, health insurance, and embassy contacts — simplified in one hub.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <h2>💡 Why Unwritten Exists</h2>
+  <p>Because belonging shouldn’t take years. Because a place isn’t just where you live — it’s how you live there.  
+  Sometimes the hardest part of moving isn’t the paperwork — it’s the silence between “how things work” and “how people work.”  
+  <br><br><strong>Unwritten fills that gap — one small truth at a time.</strong></p>
+</section>
+
+<!-- JOIN -->
+<section>
+  <h2>🌱 Join the Early Community</h2>
+  <p>We’re building Unwritten with people who believe curiosity is a virtue, not a tourist act. Join our early testers, share your insights, and help us write the unwritten rules of the world.</p>
+  <a href="#" class="cta">Join the Waitlist</a>
+  <a href="#" class="cta">Become a Contributor</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Unwritten © 2025 — Made by travelers, dreamers, and locals everywhere.</p>
+  <p><a href="#">About</a> | <a href="#">Press</a> | <a href="#">Contribute</a> | <a href="#">Privacy</a> | <a href="#">Contact</a></p>
+</footer>
+
+</body>
+</html>
